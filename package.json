@@ -1,0 +1,25 @@
+{
+  "name": "myPostman-backend",
+  "version": "1.0.0",
+  "description": "The backend server for MyPostman, handling API requests, authentication, data storage, and response processing. Supports multiple environments, user management, and integration with the frontend for seamless API testing operations.",
+  "main": "index.js",
+  "repository": "https://github.com/apiTestingTool/myPostman-backend.git",
+  "author": "Kaustubh Gawade <kaustubhgawade2602@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.0.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}
