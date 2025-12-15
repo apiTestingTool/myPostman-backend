@@ -1,2 +1,2 @@
-export * from "./health";
 export * from "./myPostman";
+export * from "./sendRequest";

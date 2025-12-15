@@ -2,7 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 
 import { Endpoints } from "./config";
-import { healthRouter, myPostmanRouter } from "./routes";
+import { myPostmanRouter, sendRequestRouter } from "./routes";
 
 dotenv.config();
 
@@ -13,8 +13,8 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 
 // Routes
-app.use(`/${Endpoints.HEALTH}`, healthRouter);
 app.use(`/${Endpoints.MY_POSTMAN}`, myPostmanRouter);
+app.use(`/${Endpoints.SEND_REQUEST}`, sendRequestRouter);
 
 // Start server
 app.listen(PORT, () => {
